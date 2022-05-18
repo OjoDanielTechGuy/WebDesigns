@@ -31,3 +31,12 @@
 .center img{
     width: 15px;
 }
+
+.center{
+    margin-bottom: 10px;
+    min-width: 300px;
+}
+
+.left{
+   margin-bottom: 10px;
+}
