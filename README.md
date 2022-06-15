@@ -6,8 +6,7 @@
 
 - ### **[3 Column Card](./3-COLUMN-CARD/index.html)** - Using Flex Box to design a 3 Column Card
 
-- ### \*\*[3 Column Card](./3-COLUMN-CARD/grid.html)
-  \*\* - Using Grid Box to design a 3 Column Card
+- ### **[3 Column Card](./3-COLUMN-CARD/grid.html)** - Using Grid Box for multi dimensional layout
 
 ### **_General_**
 
