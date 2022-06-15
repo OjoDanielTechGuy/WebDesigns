@@ -8,6 +8,8 @@
 
 - ### **[3 Column Card](./3-COLUMN-CARD/grid.html)** - Using Grid Box for multi dimensional layout
 
+- ### **[Registration Form](./REGISTRATION-FORM/index.html)** - - Designing a Registration form web reponsiveness
+
 ### **_General_**
 
 - Editors: VSCode
