@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+    'r r o'
+    'g s s'
+    'g s2 s2'
+    ;
+    gap: 10px;
+    width: 50%;
+    
+}
+
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main div{
+    padding: 4em;
+}
+
+.red{
+    background-color: red;
+    grid-area: r;
+    height: 150px;
+}
+
+.orange{
+    background-color: orange;
+    grid-area: o;
+}
+
+.green{
+    background-color: green;
+    grid-area: g;
+}
+
+.skyblue{
+    background-color: skyblue;
+    grid-area: s;
+}
+
+.skyblue2{
+    background-color: skyblue;
+    grid-area: s2;
+}
+
+
+
