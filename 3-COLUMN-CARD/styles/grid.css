@@ -7,10 +7,10 @@ header h3{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
+/**making the display in grid form*/
 main{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas: /**for multidimensional display*/
     'r r o'
     'g s s'
     'g s2 s2'
@@ -20,7 +20,7 @@ main{
     
 }
 
-body{
+body {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -57,6 +57,16 @@ main div{
 .skyblue2{
     background-color: skyblue;
     grid-area: s2;
+}
+
+@media screen and (max-width: 375px){
+    /**Adding a media query for the specific screen size*/
+    
+    main{
+        width: 100%;
+        padding: 10px;
+    }
+
 }
 
 
