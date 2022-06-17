@@ -103,7 +103,7 @@ h3{
     margin: 0;
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 375px)  {
 
     #CAR-INFO {
         display: flex;
@@ -135,5 +135,28 @@ h3{
         #SUVS,
         #LUXURY {
             border-radius: 0;
+        }
+}
+
+@media screen and (max-width: 800px) {/**This media query puts in it column and makes it more adjustable to difference screen size: At a maximum view of the screen at 800px do the followign underneath:*/
+
+    #CAR-INFO {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        margin: 20px auto;
+    }
+    #SEDANS
+    {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #SUVS{
+        border-radius: 0;
+    }
+    #LUXURY{
+            border-radius: 0 0 10px 10px;
         }
 }
