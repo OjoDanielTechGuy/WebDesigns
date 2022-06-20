@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/bg-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    font-family: Roboto, sans-serif, Arial;
+    font-size: 16px;
+}
+
+button, input{
+font-family: Roboto, sans-serif, Arial;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#leftSection{
+    width: 100%;
+    color: white;
+    padding: 20px;
+    width: 400px;
+    max-width: 100%;
+}
+
+#leftSection h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#leftSection p{
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;;
+}
+
+.trialbtn{
+    border: none;
+    background-color: hsl(248, 32%, 49%);
+    width: 100%;
+    padding: 10px;
+    font-weight: 500;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.post-amount {
+    font-weight: lighter;
+}
+
+.form-container{
+    background-color: white;
+    padding: 10px 30px;
+    margin-top: 15px;
+    border-radius: 7px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+    
+}
+ 
+.form-control{
+    margin: 0 auto;
+} 
+
+.form-control input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border: 1px solid hsla(246, 25%, 77%, 0.6);
+    border-radius: 3px;
+    font-family: inherit;
+    
+}
+
+input::placeholder{
+    padding-left: 2px;
+    font-family: Roboto, Arial;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.claim-trialbtn{
+    border: none;
+    background-color: hsl(154, 83%, 39%);
+    width: 100%;
+    padding: 10px;
+    font-weight: 500;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.c-tc{
+    color: hsl(246, 25%, 77%);
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.tc{
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tc:hover{
+    text-decoration: underline;
+}
+
+.form-container input:invalid:focus{ /**This syntax shows when an input element is focus on it should give it a background an a space adjustment with an online color*/
+    background: url(./images/icon-error.svg) no-repeat 96%center white;
+    outline: 2px solid hsl(0, 100%, 74%);
+}
+
+.form-container small, .emessage{
+    display: none;
+}
+
+.form-container input:required:focus ~ small{
+    display: block;
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+    visibility: visible;
+}
+
+
+input[type=email]:invalid:focus::-webkit-input-placeholder{
+    color: hsl(0, 100%, 74%);
+}
+
+
+@media screen and (max-width: 800px){
+        #container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 80%;   
+                margin: auto; 
+        }
+
+            div h3, p{
+                text-align: center;
+                margin: auto 10px;
+            }
+            
+            body{
+                background-image: url(./images/bg-mobile.png);
+            }
+
+}
+
+@media (max-width: 375px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url(./images/bg-mobile.png);
+    }
+
+    div h3,
+    p {
+        text-align: center;
+        width: 70%;
+        margin-left: 30px;
+    }
+
+    form{
+        width: 75%;
+        margin: 0 8px;
+    }
+
+}
+
+
+
+
